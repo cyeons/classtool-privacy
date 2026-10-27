@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>개인정보 처리방침 — 클래스툴 for Whale</title>
 <style>
-:root{--line:rgba(0,0,0,.1);--text:#1A1A1A;--muted:#777;--link:#0066DC;color-scheme:light}
+:root{--line:rgba(0,0,0,.1);--text:#1A1A1A;--muted:#666;--link:#0066DC;color-scheme:light}
 body{margin:0 auto;max-width:720px;padding:24px 16px 48px;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;color:var(--text);background:#fff}
 h1{font-size:1.5rem}h2{font-size:1.125rem;margin-top:24px}.muted{color:var(--muted);font-size:.8125rem}a{color:var(--link)}
 table{border-collapse:collapse;width:100%}td,th{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
@@ -15,7 +15,7 @@ table{border-collapse:collapse;width:100%}td,th{border:1px solid var(--line);pad
 <body>
 <!-- 원본: 저장소 루트 PRIVACY.md. 고치면 이 파일도 같은 커밋에서 맞춘다. -->
 <h1>클래스툴 for Whale 개인정보 처리방침</h1>
-<p class="muted">최종 수정일: 2026-09-25 · 클래스툴 for Whale은 네이버가 만들거나 보증하는 공식 앱이 아닙니다.</p>
+<p class="muted">최종 수정일: 2026-09-28 · 클래스툴 for Whale은 네이버가 만들거나 보증하는 공식 앱이 아닙니다.</p>
 <p>클래스툴 for Whale(이하 "확장앱")은 선생님이 학급 도구(뽑기, 타이머 등)를 쓸 수 있도록 학생 명단을 <strong>선생님의 브라우저 안에만</strong> 저장합니다. 개발자를 포함한 누구에게도 학생 정보가 전송되지 않습니다.</p>
 
 <h2>1. 처리하는 정보</h2>
@@ -24,9 +24,13 @@ table{border-collapse:collapse;width:100%}td,th{border:1px solid var(--line);pad
 <tr><th>번호</th><td>웨일 클래스의 번호(NEIS 정보 등록 시) 또는 자동으로 붙인 번호</td></tr>
 <tr><th>그룹</th><td>웨일 클래스 그룹 이름(있을 때)</td></tr>
 <tr><th>웨일 클래스 내부 ID</th><td>다시 불러올 때 같은 학생을 찾기 위한 식별 번호</td></tr>
-<tr><th>도구 사용 기록</th><td>뽑기 결과 기록, 타이머 설정</td></tr>
+<tr><th>도구 사용 기록</th><td>뽑기·발표 기록, 모둠·역할·점수·자리 배치 결과, 타이머 설정</td></tr>
+<tr><th>학교·측정소 설정</th><td>급식을 볼 학교(이름·학교 코드), 미세먼지 측정소 이름</td></tr>
+<tr><th>에어코리아 인증키(선택)</th><td>선생님이 직접 넣은 경우에만. 이 브라우저에만 두고 백업 파일에는 넣지 않습니다</td></tr>
 </table>
-<p><strong>처리하지 않는 정보</strong>: 이메일, 연락처, 성적, 사진, 위치, 브라우저 방문 기록</p>
+<p><strong>처리하지 않는 정보</strong>: 이메일, 연락처, 성적, 사진, 위치, 브라우저 방문 기록, 녹음</p>
+<p><strong>마이크</strong>: [소음 측정]을 켰을 때만 마이크를 씁니다. 소리의 크기만 화면 안에서 계산하고 바로 버리며, 녹음하거나 저장·전송하지 않습니다.</p>
+<p><strong>이름 읽어 주기</strong>: 켜 두면 뽑힌 이름 등을 소리로 읽습니다. 학생 이름이 외부 음성 서버로 가지 않도록 이 컴퓨터 안에 설치된 음성만 씁니다.</p>
 
 <h2>2. 수집 방법</h2>
 <ul>
@@ -36,13 +40,18 @@ table{border-collapse:collapse;width:100%}td,th{border:1px solid var(--line);pad
 </ul>
 
 <h2>3. 이용 목적</h2>
-<p>학급 도구 화면에 학생 이름과 번호를 표시하고, 뽑기의 중복 제외와 기록 기능을 제공하기 위해서만 이용합니다.</p>
+<p>학급 도구 화면에 학생 이름과 번호를 표시하고, 뽑기의 중복 제외, 골고루 참여, 기록 기능을 제공하기 위해서만 이용합니다.</p>
 
 <h2>4. 보관 위치와 기간</h2>
 <p>선생님 브라우저의 확장앱 전용 저장소에 보관하며 외부 서버에 저장하지 않습니다. 선생님이 삭제하거나 확장앱을 삭제할 때까지 보관합니다.</p>
 
 <h2>5. 제3자 제공과 외부 전송</h2>
-<p>없습니다. 분석 도구, 광고, 추적 코드를 쓰지 않습니다. 확장앱이 보내는 네트워크 요청은 선생님이 버튼을 눌렀을 때 웨일 클래스(class.whalespace.io)를 읽기만 하는 요청뿐입니다(구성원 명단 읽기, [공지로 보내기]를 위한 공지 게시판 주소 찾기).</p>
+<p>없습니다. 분석 도구, 광고, 추적 코드를 쓰지 않습니다. 확장앱이 보내는 네트워크 요청은 아래뿐이며, <strong>학생 정보는 어느 요청에도 들어가지 않습니다.</strong></p>
+<ul>
+<li><strong>웨일 클래스</strong>(class.whalespace.io): 선생님이 버튼을 눌렀을 때 읽기만 합니다(구성원 명단 읽기, [공지로 보내기]를 위한 공지 게시판 주소 찾기).</li>
+<li><strong>나이스 교육정보 개방 포털</strong>(open.neis.go.kr): [급식]에서 학교를 찾고 급식 식단을 읽습니다. 학교 이름·학교 코드·날짜만 보냅니다.</li>
+<li><strong>미세먼지</strong>: [미세먼지]에서 에어코리아(한국환경공단)의 측정값과 예보를 읽고, 학교 위치로 가까운 측정소를 찾습니다. 학교 이름·시·도·측정소 이름과 날짜만 보냅니다. 기본은 개발자가 운영하는 <strong>클래스툴 중계 서버</strong>(classtool-air.vercel.app, Vercel 서울 리전)를 거칩니다. 중계 서버는 에어코리아 인증키를 붙여 대신 조회하고 결과를 잠시 저장할 뿐, 요청 내용을 따로 기록하지 않습니다. Vercel이 서비스 운영을 위해 접속 기록(IP 주소 등)을 남길 수 있습니다. 선생님이 자기 인증키를 넣으면 중계 서버 없이 에어코리아(apis.data.go.kr)에 바로 조회하며, 인증키도 함께 보냅니다.</li>
+</ul>
 
 <h2>6. 삭제 방법</h2>
 <ul>
@@ -52,7 +61,7 @@ table{border-collapse:collapse;width:100%}td,th{border:1px solid var(--line);pad
 </ul>
 
 <h2>7. 아동의 개인정보</h2>
-<p>학생 대부분이 만 14세 미만일 수 있습니다. 그래서 수업에 필요한 최소한의 정보만 선생님의 기기 안에서만 처리하고, 어떤 외부로도 전송하지 않습니다.</p>
+<p>학생 대부분이 만 14세 미만일 수 있습니다. 그래서 수업에 필요한 최소한의 정보를 선생님의 기기 안에서만 처리하고, 외부로 전송하지 않습니다.</p>
 
 <h2>8. 변경 · 문의</h2>
 <p>처리방침이 바뀌면 확장앱 업데이트 내역과 이 문서에 알립니다. 문의: <a href="mailto:cyeons@gne.go.kr">cyeons@gne.go.kr</a></p>
